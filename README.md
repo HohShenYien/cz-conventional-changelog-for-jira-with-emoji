@@ -1,16 +1,13 @@
 # cz-conventional-changelog-for-jira
 
-Part of the [commitizen/cz-cli](https://github.com/commitizen/cz-cli) family. Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard and also prompts for a mandatory JIRA issue.
-
-[![npm version](https://img.shields.io/npm/v/@digitalroute/cz-conventional-changelog-for-jira.svg?style=flat-square)](https://www.npmjs.org/package/@digitalroute/cz-conventional-changelog-for-jira)
-[![npm downloads](https://img.shields.io/npm/dm/@digitalroute/cz-conventional-changelog-for-jira.svg?style=flat-square)](http://npm-stat.com/charts.html?package=@digitalroute/cz-conventional-changelog-for-jira)
-[![Build Status](https://img.shields.io/travis/digitalroute/cz-conventional-changelog-for-jira.svg?style=flat-square)](https://travis-ci.org/digitalroute/cz-conventional-changelog-for-jira)
+Part of the [commitizen/cz-cli](https://github.com/commitizen/cz-cli) family. Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard and also prompts for a [JIRA issue](https://github.com/digitalroute/cz-conventional-changelog-for-jira).
 
 ## Features
 
 - Works seamlessly with semantic-release 🚀
 - Works seamlessly with Jira smart commits
 - Automatically detects the Jira issue from the branch name
+- Better support for emojis
 
 ## Quickstart
 
