@@ -1,7 +1,7 @@
 {
-  "name": "@digitalroute/cz-conventional-changelog-for-jira",
+  "name": "@HohShenYien/cz-conventional-changelog-for-jira",
   "version": "0.0.0-semantically-released",
-  "description": "Commitizen adapter following the conventional-changelog format and also asking for JIRA issue.",
+  "description": "Commitizen adapter following the conventional-changelog format with emoji and also asking for JIRA issue.",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
@@ -12,13 +12,13 @@
   "homepage": "https://github.com/digitalroute/cz-conventional-changelog-for-jira",
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalroute/cz-conventional-changelog-for-jira.git"
+    "url": "https://github.com/HohShenYien/cz-conventional-changelog-for-jira-with-emoji.git"
   },
   "engineStrict": true,
   "engines": {
     "node": ">= 10"
   },
-  "author": "Marcus Johansson <polarn@gmail.com>",
+  "author": "Hoh Shen Yien <hohshenyien@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "boxen": "^5.1.2",
