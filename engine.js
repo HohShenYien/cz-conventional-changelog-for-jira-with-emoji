@@ -1,8 +1,6 @@
 'format cjs';
 
 var wrap = require('word-wrap');
-var map = require('lodash.map');
-var longest = require('longest');
 var rightPad = require('right-pad');
 var chalk = require('chalk');
 const { execSync } = require('child_process');
@@ -23,6 +21,19 @@ var filterSubject = function(subject) {
   }
   return subject;
 };
+
+function getEmojiChoices(types) {
+  const maxNameLength = types.reduce(
+    (maxLength, type) => (type.name.length > maxLength ? type.name.length : maxLength),
+    0
+  )
+
+  return types.map(choice => ({
+    name: `${rightPad(choice.name, maxNameLength)}  ${choice.emoji} \t${choice.description}`,
+    value: `${choice.code} ${choice.name}` ,
+    code: choice.code
+  }))
+}
 
 // This can be any kind of SystemJS compatible module.
 // We use Commonjs here, but ES6 or AMD would do just
@@ -69,13 +80,7 @@ module.exports = function(options) {
 
   var types = getFromOptionsOrDefaults('types');
 
-  var length = longest(Object.keys(types)).length + 1;
-  var choices = map(types, function(type, key) {
-    return {
-      name: rightPad(key + ':', length) + ' ' + type.description,
-      value: key
-    };
-  });
+  var choices = getEmojiChoices(types);
 
   const minHeaderWidth = getFromOptionsOrDefaults('minHeaderWidth');
   const maxHeaderWidth = getFromOptionsOrDefaults('maxHeaderWidth');
@@ -179,7 +184,6 @@ module.exports = function(options) {
             if (providedScope && providedScope !== 'none') {
               scope = `(${providedScope})`;
             }
-
             const jiraWithDecorators = decorateJiraIssue(answers.jira, options);
             return getJiraIssueLocation(options.jiraLocation, answers.type, scope, jiraWithDecorators, '').trim();
           },
