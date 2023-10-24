@@ -1,41 +1,321 @@
-module.exports = {
-  feat: {
-    description: 'A new feature',
-    title: 'Features'
+module.exports = [
+  {
+    name: "feature",
+    emoji: "✨",
+    description: "Introducing new features.",
+    code: ":sparkles: feature",
   },
-  fix: {
-    description: 'A bug fix',
-    title: 'Bug Fixes'
+  {
+    name: "fix",
+    emoji: "🐛",
+    description: "Fixing a bug.",
+    code: ":bug: fix",
   },
-  docs: {
-    description: 'Documentation only changes',
-    title: 'Documentation'
+  {
+    name: "quickfix",
+    emoji: "🚑",
+    description: "Critical hotfix.",
+    code: ":ambulance: quickfix",
   },
-  refactor: {
+  {
+    name: "ui",
+    emoji: "💄",
+    description: "Updating the UI and style files.",
+    code: ":lipstick: ui",
+  },
+  {
+    name: "refactoring",
+    emoji: "♻️",
+    description: "Refactoring code.",
+    code: ":recycle: refactoring",
+  },
+  {
+    name: "perf",
+    emoji: "⚡️",
+    description: "Improving performance.",
+    code: ":zap: perf",
+  },
+  {
+    name: "prune",
+    emoji: "🔥",
+    description: "Removing code or files.",
+    code: ":fire: prune",
+  },
+  {
+    name: "wip",
+    emoji: "🚧",
+    description: "Work in progress.",
+    code: ":construction: wip",
+  },
+  {
+    name: "docs",
+    emoji: "📝",
+    description: "Writing docs.",
+    code: ":pencil: docs",
+  },
+  {
+    name: "deploy",
+    emoji: "🚀",
+    description: "Deploying stuff.",
+    code: ":rocket: deploy",
+  },
+  {
+    name: "init",
+    emoji: "🎉",
+    description: "Initial commit.",
+    code: ":tada: init",
+  },
+  {
+    name: "test",
+    emoji: "✅",
+    description: "Adding tests.",
+    code: ":white_check_mark: test",
+  },
+  {
+    name: "security",
+    emoji: "🔒",
+    description: "Fixing security issues.",
+    code: ":lock: security",
+  },
+  {
+    name: "release",
+    emoji: "🔖",
+    description: "Releasing / Version tags.",
+    code: ":bookmark: release",
+  },
+  {
+    name: "lint",
+    emoji: "🚨",
+    description: "Removing linter warnings.",
+    code: ":rotating_light: lint",
+  },
+  {
+    name: "dep-add",
+    emoji: "➕",
+    description: "Adding a dependency.",
+    code: ":heavy_plus_sign: dep-add",
+  },
+  {
+    name: "dep-rm",
+    emoji: "➖",
+    description: "Removing a dependency.",
+    code: ":heavy_minus_sign: dep-rm",
+  },
+  {
+    name: "downgrade",
+    emoji: "⬇️",
+    description: "Downgrading dependencies.",
+    code: ":arrow_down: downgrade",
+  },
+  {
+    name: "upgrade",
+    emoji: "⬆️",
+    description: "Upgrading dependencies.",
+    code: ":arrow_up: upgrade",
+  },
+  {
+    name: "docker",
+    emoji: "🐳",
+    description: "Work about Docker.",
+    code: ":whale: docker",
+  },
+  {
+    name: "fix-ci",
+    emoji: "💚",
+    description: "Fixing CI Build.",
+    code: ":green_heart: fix-ci",
+  },
+  {
+    name: "ci",
+    emoji: "👷",
+    description: "Adding CI build system.",
+    code: ":construction_worker: ci",
+  },
+  {
+    name: "analytics",
+    emoji: "📈",
+    description: "Adding analytics or tracking code.",
+    code: ":chart_with_upwards_trend: analytics",
+  },
+  {
+    name: "config",
+    emoji: "🔧",
+    description: "Changing configuration files.",
+    code: ":wrench: config",
+  },
+  {
+    name: "i18n",
+    emoji: "🌐",
+    description: "Internationalization and localization.",
+    code: ":globe_with_meridians: i18n",
+  },
+  {
+    name: "typo",
+    emoji: "✏️",
+    description: "Fixing typos.",
+    code: ":pencil2: typo",
+  },
+  {
+    name: "poo",
+    emoji: "💩",
+    description: "Writing bad code that needs to be improved.",
+    code: ":poop: poo",
+  },
+  {
+    name: "revert",
+    emoji: "⏪",
+    description: "Reverting changes.",
+    code: ":rewind: revert",
+  },
+  {
+    name: "merge",
+    emoji: "🔀",
+    description: "Merging branches.",
+    code: ":twisted_rightwards_arrows: merge",
+  },
+  {
+    name: "compat",
+    emoji: "👽",
+    description: "Updating code due to external API changes.",
+    code: ":alien: compat",
+  },
+  {
+    name: "mv",
+    emoji: "🚚",
+    description: "Moving or renaming files.",
+    code: ":truck: mv",
+  },
+  {
+    name: "assets",
+    emoji: "🍱",
+    description: "Adding or updating assets.",
+    code: ":bento: assets",
+  },
+  {
+    name: "review",
+    emoji: "👌",
+    description: "Updating code due to code review changes.",
+    code: ":ok_hand: review",
+  },
+  {
+    name: "access",
+    emoji: "♿️",
+    description: "Improving accessibility.",
+    code: ":wheelchair: access",
+  },
+  {
+    name: "docs-code",
+    emoji: "💡",
+    description: "Documenting source code.",
+    code: ":bulb: docs-code",
+  },
+  {
+    name: "texts",
+    emoji: "💬",
+    description: "Updating text and literals.",
+    code: ":speech_balloon: texts",
+  },
+  {
+    name: "db",
+    emoji: "🗃",
+    description: "Performing database related changes.",
+    code: ":card_file_box: db",
+  },
+  {
+    name: "logs",
+    emoji: "🔊",
+    description: "Performing logs related changes.",
+    code: ":loud_sound: logs",
+  },
+  {
+    name: "ux",
+    emoji: "🚸",
+    description: "Improving user experience / usability.",
+    code: ":children_crossing: ux",
+  },
+  {
+    name: "arch",
+    emoji: "🏗",
+    description: "Making architectural changes.",
+    code: ":building_construction: arch",
+  },
+  {
+    name: "responsive",
+    emoji: "📱",
+    description: "Working on responsive design.",
+    code: ":iphone: responsive",
+  },
+  {
+    name: "mocks",
+    emoji: "🤡",
+    description: "Mocking things.",
+    code: ":clown_face: mocks",
+  },
+  {
+    name: "gitignore",
+    emoji: "🙈",
+    description: "Adding or updating a .gitignore file.",
+    code: ":see_no_evil: gitignore",
+  },
+  {
+    name: "experiment",
+    emoji: "⚗",
+    description: "Experimenting new things.",
+    code: ":alembic: experiment",
+  },
+  {
+    name: "k8s",
+    emoji: "☸️",
+    description: "Work about Kubernetes.",
+    code: ":wheel_of_dharma: k8s",
+  },
+  {
+    name: "types",
+    emoji: "🏷️",
+    description: "Adding or updating types (Flow, TypeScript).",
+    code: ":label: types",
+  },
+  {
+    name: "seed",
+    emoji: "🌱",
+    description: "Adding or updating seed files.",
+    code: ":seedling: seed",
+  },
+  {
+    name: "flags",
+    emoji: "🚩",
+    description: "Adding, updating, or removing feature flags.",
+    code: ":triangular_flag_on_post: flags",
+  },
+  {
+    name: "auth",
+    emoji: "🛂",
     description:
-      'A code change that neither fixes a bug nor adds a feature (formatting, performance improvement, etc)',
-    title: 'Code Refactoring'
+      "Work on code related to authorization, roles and permissions.",
+    code: ":passport_control: auth",
   },
-  test: {
-    description: 'Adding missing tests or correcting existing tests',
-    title: 'Tests'
+  {
+    name: "temp-fix",
+    emoji: "🩹",
+    description: "Simple fix for a non-critical issue.",
+    code: ":adhesive_bandage: temp-fix",
   },
-  build: {
-    description:
-      'Changes that affect the build system or external dependencies (npm, webpack, typescript)',
-    title: 'Builds'
+  {
+    name: "business",
+    emoji: "👔",
+    description: "Add or update business logic",
+    code: ":necktie: business",
   },
-  ci: {
-    description:
-      'Changes to our CI configuration files and scripts (NOTE: Does not bump the version)',
-    title: 'Continuous Integrations'
+  {
+    name: "infra",
+    emoji: "🧱",
+    description: "Infrastructure related changes.",
+    code: ":bricks: infra",
   },
-  chore: {
-    description: "Other changes that don't modify src or test files",
-    title: 'Chores'
+  {
+    name: "dx",
+    emoji: "🧑‍💻",
+    description: "Improve developer experience",
+    code: ":technologist: dx",
   },
-  revert: {
-    description: 'Reverts a previous commit',
-    title: 'Reverts'
-  }
-};
+];
