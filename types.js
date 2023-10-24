@@ -1,321 +1,321 @@
 module.exports = [
   {
-    name: "feature",
-    emoji: "✨",
-    description: "Introducing new features.",
-    code: ":sparkles: feature",
+    name: 'feature',
+    emoji: '✨',
+    description: 'Introducing new features.',
+    code: ':sparkles:'
   },
   {
-    name: "fix",
-    emoji: "🐛",
-    description: "Fixing a bug.",
-    code: ":bug: fix",
+    name: 'fix',
+    emoji: '🐛',
+    description: 'Fixing a bug.',
+    code: ':bug:'
   },
   {
-    name: "quickfix",
-    emoji: "🚑",
-    description: "Critical hotfix.",
-    code: ":ambulance: quickfix",
+    name: 'quickfix',
+    emoji: '🚑',
+    description: 'Critical hotfix.',
+    code: ':ambulance:'
   },
   {
-    name: "ui",
-    emoji: "💄",
-    description: "Updating the UI and style files.",
-    code: ":lipstick: ui",
+    name: 'ui',
+    emoji: '💄',
+    description: 'Updating the UI and style files.',
+    code: ':lipstick:'
   },
   {
-    name: "refactoring",
-    emoji: "♻️",
-    description: "Refactoring code.",
-    code: ":recycle: refactoring",
+    name: 'refactoring',
+    emoji: '♻️',
+    description: 'Refactoring code.',
+    code: ':recycle:'
   },
   {
-    name: "perf",
-    emoji: "⚡️",
-    description: "Improving performance.",
-    code: ":zap: perf",
+    name: 'perf',
+    emoji: '⚡️',
+    description: 'Improving performance.',
+    code: ':zap:'
   },
   {
-    name: "prune",
-    emoji: "🔥",
-    description: "Removing code or files.",
-    code: ":fire: prune",
+    name: 'prune',
+    emoji: '🔥',
+    description: 'Removing code or files.',
+    code: ':fire:'
   },
   {
-    name: "wip",
-    emoji: "🚧",
-    description: "Work in progress.",
-    code: ":construction: wip",
+    name: 'wip',
+    emoji: '🚧',
+    description: 'Work in progress.',
+    code: ':construction:'
   },
   {
-    name: "docs",
-    emoji: "📝",
-    description: "Writing docs.",
-    code: ":pencil: docs",
+    name: 'docs',
+    emoji: '📝',
+    description: 'Writing docs.',
+    code: ':pencil:'
   },
   {
-    name: "deploy",
-    emoji: "🚀",
-    description: "Deploying stuff.",
-    code: ":rocket: deploy",
+    name: 'deploy',
+    emoji: '🚀',
+    description: 'Deploying stuff.',
+    code: ':rocket:'
   },
   {
-    name: "init",
-    emoji: "🎉",
-    description: "Initial commit.",
-    code: ":tada: init",
+    name: 'init',
+    emoji: '🎉',
+    description: 'Initial commit.',
+    code: ':tada:'
   },
   {
-    name: "test",
-    emoji: "✅",
-    description: "Adding tests.",
-    code: ":white_check_mark: test",
+    name: 'test',
+    emoji: '✅',
+    description: 'Adding tests.',
+    code: ':white_check_mark:'
   },
   {
-    name: "security",
-    emoji: "🔒",
-    description: "Fixing security issues.",
-    code: ":lock: security",
+    name: 'security',
+    emoji: '🔒',
+    description: 'Fixing security issues.',
+    code: ':lock:'
   },
   {
-    name: "release",
-    emoji: "🔖",
-    description: "Releasing / Version tags.",
-    code: ":bookmark: release",
+    name: 'release',
+    emoji: '🔖',
+    description: 'Releasing / Version tags.',
+    code: ':bookmark:'
   },
   {
-    name: "lint",
-    emoji: "🚨",
-    description: "Removing linter warnings.",
-    code: ":rotating_light: lint",
+    name: 'lint',
+    emoji: '🚨',
+    description: 'Removing linter warnings.',
+    code: ':rotating_light:'
   },
   {
-    name: "dep-add",
-    emoji: "➕",
-    description: "Adding a dependency.",
-    code: ":heavy_plus_sign: dep-add",
+    name: 'dep-add',
+    emoji: '➕',
+    description: 'Adding a dependency.',
+    code: ':heavy_plus_sign:'
   },
   {
-    name: "dep-rm",
-    emoji: "➖",
-    description: "Removing a dependency.",
-    code: ":heavy_minus_sign: dep-rm",
+    name: 'dep-rm',
+    emoji: '➖',
+    description: 'Removing a dependency.',
+    code: ':heavy_minus_sign:'
   },
   {
-    name: "downgrade",
-    emoji: "⬇️",
-    description: "Downgrading dependencies.",
-    code: ":arrow_down: downgrade",
+    name: 'downgrade',
+    emoji: '⬇️',
+    description: 'Downgrading dependencies.',
+    code: ':arrow_down:'
   },
   {
-    name: "upgrade",
-    emoji: "⬆️",
-    description: "Upgrading dependencies.",
-    code: ":arrow_up: upgrade",
+    name: 'upgrade',
+    emoji: '⬆️',
+    description: 'Upgrading dependencies.',
+    code: ':arrow_up:'
   },
   {
-    name: "docker",
-    emoji: "🐳",
-    description: "Work about Docker.",
-    code: ":whale: docker",
+    name: 'docker',
+    emoji: '🐳',
+    description: 'Work about Docker.',
+    code: ':whale:'
   },
   {
-    name: "fix-ci",
-    emoji: "💚",
-    description: "Fixing CI Build.",
-    code: ":green_heart: fix-ci",
+    name: 'fix-ci',
+    emoji: '💚',
+    description: 'Fixing CI Build.',
+    code: ':green_heart:'
   },
   {
-    name: "ci",
-    emoji: "👷",
-    description: "Adding CI build system.",
-    code: ":construction_worker: ci",
+    name: 'ci',
+    emoji: '👷',
+    description: 'Adding CI build system.',
+    code: ':construction_worker:'
   },
   {
-    name: "analytics",
-    emoji: "📈",
-    description: "Adding analytics or tracking code.",
-    code: ":chart_with_upwards_trend: analytics",
+    name: 'analytics',
+    emoji: '📈',
+    description: 'Adding analytics or tracking code.',
+    code: ':chart_with_upwards_trend:'
   },
   {
-    name: "config",
-    emoji: "🔧",
-    description: "Changing configuration files.",
-    code: ":wrench: config",
+    name: 'config',
+    emoji: '🔧',
+    description: 'Changing configuration files.',
+    code: ':wrench:'
   },
   {
-    name: "i18n",
-    emoji: "🌐",
-    description: "Internationalization and localization.",
-    code: ":globe_with_meridians: i18n",
+    name: 'i18n',
+    emoji: '🌐',
+    description: 'Internationalization and localization.',
+    code: ':globe_with_meridians:'
   },
   {
-    name: "typo",
-    emoji: "✏️",
-    description: "Fixing typos.",
-    code: ":pencil2: typo",
+    name: 'typo',
+    emoji: '✏️',
+    description: 'Fixing typos.',
+    code: ':pencil2:'
   },
   {
-    name: "poo",
-    emoji: "💩",
-    description: "Writing bad code that needs to be improved.",
-    code: ":poop: poo",
+    name: 'poo',
+    emoji: '💩',
+    description: 'Writing bad code that needs to be improved.',
+    code: ':poop:'
   },
   {
-    name: "revert",
-    emoji: "⏪",
-    description: "Reverting changes.",
-    code: ":rewind: revert",
+    name: 'revert',
+    emoji: '⏪',
+    description: 'Reverting changes.',
+    code: ':rewind:'
   },
   {
-    name: "merge",
-    emoji: "🔀",
-    description: "Merging branches.",
-    code: ":twisted_rightwards_arrows: merge",
+    name: 'merge',
+    emoji: '🔀',
+    description: 'Merging branches.',
+    code: ':twisted_rightwards_arrows:'
   },
   {
-    name: "compat",
-    emoji: "👽",
-    description: "Updating code due to external API changes.",
-    code: ":alien: compat",
+    name: 'compat',
+    emoji: '👽',
+    description: 'Updating code due to external API changes.',
+    code: ':alien:'
   },
   {
-    name: "mv",
-    emoji: "🚚",
-    description: "Moving or renaming files.",
-    code: ":truck: mv",
+    name: 'mv',
+    emoji: '🚚',
+    description: 'Moving or renaming files.',
+    code: ':truck:'
   },
   {
-    name: "assets",
-    emoji: "🍱",
-    description: "Adding or updating assets.",
-    code: ":bento: assets",
+    name: 'assets',
+    emoji: '🍱',
+    description: 'Adding or updating assets.',
+    code: ':bento:'
   },
   {
-    name: "review",
-    emoji: "👌",
-    description: "Updating code due to code review changes.",
-    code: ":ok_hand: review",
+    name: 'review',
+    emoji: '👌',
+    description: 'Updating code due to code review changes.',
+    code: ':ok_hand:'
   },
   {
-    name: "access",
-    emoji: "♿️",
-    description: "Improving accessibility.",
-    code: ":wheelchair: access",
+    name: 'access',
+    emoji: '♿️',
+    description: 'Improving accessibility.',
+    code: ':wheelchair:'
   },
   {
-    name: "docs-code",
-    emoji: "💡",
-    description: "Documenting source code.",
-    code: ":bulb: docs-code",
+    name: 'docs-code',
+    emoji: '💡',
+    description: 'Documenting source code.',
+    code: ':bulb:'
   },
   {
-    name: "texts",
-    emoji: "💬",
-    description: "Updating text and literals.",
-    code: ":speech_balloon: texts",
+    name: 'texts',
+    emoji: '💬',
+    description: 'Updating text and literals.',
+    code: ':speech_balloon:'
   },
   {
-    name: "db",
-    emoji: "🗃",
-    description: "Performing database related changes.",
-    code: ":card_file_box: db",
+    name: 'db',
+    emoji: '🗃',
+    description: 'Performing database related changes.',
+    code: ':card_file_box:'
   },
   {
-    name: "logs",
-    emoji: "🔊",
-    description: "Performing logs related changes.",
-    code: ":loud_sound: logs",
+    name: 'logs',
+    emoji: '🔊',
+    description: 'Performing logs related changes.',
+    code: ':loud_sound:'
   },
   {
-    name: "ux",
-    emoji: "🚸",
-    description: "Improving user experience / usability.",
-    code: ":children_crossing: ux",
+    name: 'ux',
+    emoji: '🚸',
+    description: 'Improving user experience / usability.',
+    code: ':children_crossing:'
   },
   {
-    name: "arch",
-    emoji: "🏗",
-    description: "Making architectural changes.",
-    code: ":building_construction: arch",
+    name: 'arch',
+    emoji: '🏗',
+    description: 'Making architectural changes.',
+    code: ':building_construction:'
   },
   {
-    name: "responsive",
-    emoji: "📱",
-    description: "Working on responsive design.",
-    code: ":iphone: responsive",
+    name: 'responsive',
+    emoji: '📱',
+    description: 'Working on responsive design.',
+    code: ':iphone:'
   },
   {
-    name: "mocks",
-    emoji: "🤡",
-    description: "Mocking things.",
-    code: ":clown_face: mocks",
+    name: 'mocks',
+    emoji: '🤡',
+    description: 'Mocking things.',
+    code: ':clown_face:'
   },
   {
-    name: "gitignore",
-    emoji: "🙈",
-    description: "Adding or updating a .gitignore file.",
-    code: ":see_no_evil: gitignore",
+    name: 'gitignore',
+    emoji: '🙈',
+    description: 'Adding or updating a .gitignore file.',
+    code: ':see_no_evil:'
   },
   {
-    name: "experiment",
-    emoji: "⚗",
-    description: "Experimenting new things.",
-    code: ":alembic: experiment",
+    name: 'experiment',
+    emoji: '⚗',
+    description: 'Experimenting new things.',
+    code: ':alembic:'
   },
   {
-    name: "k8s",
-    emoji: "☸️",
-    description: "Work about Kubernetes.",
-    code: ":wheel_of_dharma: k8s",
+    name: 'k8s',
+    emoji: '☸️',
+    description: 'Work about Kubernetes.',
+    code: ':wheel_of_dharma:'
   },
   {
-    name: "types",
-    emoji: "🏷️",
-    description: "Adding or updating types (Flow, TypeScript).",
-    code: ":label: types",
+    name: 'types',
+    emoji: '🏷️',
+    description: 'Adding or updating types (Flow, TypeScript).',
+    code: ':label:'
   },
   {
-    name: "seed",
-    emoji: "🌱",
-    description: "Adding or updating seed files.",
-    code: ":seedling: seed",
+    name: 'seed',
+    emoji: '🌱',
+    description: 'Adding or updating seed files.',
+    code: ':seedling:'
   },
   {
-    name: "flags",
-    emoji: "🚩",
-    description: "Adding, updating, or removing feature flags.",
-    code: ":triangular_flag_on_post: flags",
+    name: 'flags',
+    emoji: '🚩',
+    description: 'Adding, updating, or removing feature flags.',
+    code: ':triangular_flag_on_post:'
   },
   {
-    name: "auth",
-    emoji: "🛂",
+    name: 'auth',
+    emoji: '🛂',
     description:
-      "Work on code related to authorization, roles and permissions.",
-    code: ":passport_control: auth",
+      'Work on code related to authorization, roles and permissions.',
+    code: ':passport_control:'
   },
   {
-    name: "temp-fix",
-    emoji: "🩹",
-    description: "Simple fix for a non-critical issue.",
-    code: ":adhesive_bandage: temp-fix",
+    name: 'temp-fix',
+    emoji: '🩹',
+    description: 'Simple fix for a non-critical issue.',
+    code: ':adhesive_bandage: temp'
   },
   {
-    name: "business",
-    emoji: "👔",
-    description: "Add or update business logic",
-    code: ":necktie: business",
+    name: 'business',
+    emoji: '👔',
+    description: 'Add or update business logic',
+    code: ':necktie:'
   },
   {
-    name: "infra",
-    emoji: "🧱",
-    description: "Infrastructure related changes.",
-    code: ":bricks: infra",
+    name: 'infra',
+    emoji: '🧱',
+    description: 'Infrastructure related changes.',
+    code: ':bricks:'
   },
   {
-    name: "dx",
-    emoji: "🧑‍💻",
-    description: "Improve developer experience",
-    code: ":technologist: dx",
-  },
+    name: 'dx',
+    emoji: '🧑‍💻',
+    description: 'Improve developer experience',
+    code: ':technologist:'
+  }
 ];

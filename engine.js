@@ -24,15 +24,18 @@ var filterSubject = function(subject) {
 
 function getEmojiChoices(types) {
   const maxNameLength = types.reduce(
-    (maxLength, type) => (type.name.length > maxLength ? type.name.length : maxLength),
+    (maxLength, type) =>
+      type.name.length > maxLength ? type.name.length : maxLength,
     0
-  )
+  );
 
   return types.map(choice => ({
-    name: `${rightPad(choice.name, maxNameLength)}  ${choice.emoji} \t${choice.description}`,
-    value: `${choice.code} ${choice.name}` ,
+    name: `${rightPad(choice.name, maxNameLength)}  ${choice.emoji} \t${
+      choice.description
+    }`,
+    value: `${choice.code} ${choice.name}`,
     code: choice.code
-  }))
+  }));
 }
 
 // This can be any kind of SystemJS compatible module.
@@ -73,10 +76,10 @@ module.exports = function(options) {
 
   // Generate Jira issue prepend and append decorators
   const decorateJiraIssue = function(jiraIssue, options) {
-    const prepend = options.jiraPrepend || ''
-    const append = options.jiraAppend || ''
-    return jiraIssue ? `${prepend}${jiraIssue}${append} `: '';
-  }
+    const prepend = options.jiraPrepend || '';
+    const append = options.jiraAppend || '';
+    return jiraIssue ? `${prepend}${jiraIssue}${append} ` : '';
+  };
 
   var types = getFromOptionsOrDefaults('types');
 
@@ -85,7 +88,9 @@ module.exports = function(options) {
   const minHeaderWidth = getFromOptionsOrDefaults('minHeaderWidth');
   const maxHeaderWidth = getFromOptionsOrDefaults('maxHeaderWidth');
 
-  const branchName = execSync('git branch --show-current').toString().trim();
+  const branchName = execSync('git branch --show-current')
+    .toString()
+    .trim();
   const jiraIssueRegex = /(?<jiraIssue>(?<!([a-zA-Z0-9]{1,10})-?)[a-zA-Z0-9]+-\d+)/;
   const matchResult = branchName.match(jiraIssueRegex);
   const jiraIssue =
@@ -95,11 +100,11 @@ module.exports = function(options) {
     Array.isArray(options.scopes) &&
     options.scopes.length > 0;
   const customScope = !options.skipScope && hasScopes && options.customScope;
-  const scopes = customScope ? [...options.scopes, 'custom' ]: options.scopes;
+  const scopes = customScope ? [...options.scopes, 'custom'] : options.scopes;
 
   var getProvidedScope = function(answers) {
     return answers.scope === 'custom' ? answers.customScope : answers.scope;
-  }
+  };
 
   return {
     // When a user runs `git cz`, prompter will
@@ -169,7 +174,7 @@ module.exports = function(options) {
         {
           type: 'input',
           name: 'customScope',
-          when: (({ scope }) => scope === 'custom'),
+          when: ({ scope }) => scope === 'custom',
           message: 'Type custom scope (press enter to skip)'
         },
         {
@@ -185,7 +190,13 @@ module.exports = function(options) {
               scope = `(${providedScope})`;
             }
             const jiraWithDecorators = decorateJiraIssue(answers.jira, options);
-            return getJiraIssueLocation(options.jiraLocation, answers.type, scope, jiraWithDecorators, '').trim();
+            return getJiraIssueLocation(
+              options.jiraLocation,
+              answers.type,
+              scope,
+              jiraWithDecorators,
+              ''
+            ).trim();
           },
           validate: input =>
             input.length >= minHeaderWidth ||
@@ -212,7 +223,8 @@ module.exports = function(options) {
         {
           type: 'confirm',
           name: 'isBreaking',
-          message: 'You do know that this will bump the major version, are you sure?',
+          message:
+            'You do know that this will bump the major version, are you sure?',
           default: false,
           when: function(answers) {
             return answers.isBreaking;
@@ -275,7 +287,13 @@ module.exports = function(options) {
         const jiraWithDecorators = decorateJiraIssue(answers.jira, options);
 
         // Hard limit this line in the validate
-        const head = getJiraIssueLocation(options.jiraLocation, answers.type, scope, jiraWithDecorators, answers.subject);
+        const head = getJiraIssueLocation(
+          options.jiraLocation,
+          answers.type,
+          scope,
+          jiraWithDecorators,
+          answers.subject
+        );
 
         // Wrap these lines at options.maxLineWidth characters
         var body = answers.body ? wrap(answers.body, wrapOptions) : false;
@@ -283,7 +301,7 @@ module.exports = function(options) {
           if (body === false) {
             body = '';
           } else {
-            body += "\n\n";
+            body += '\n\n';
           }
           body += jiraWithDecorators.trim();
         }

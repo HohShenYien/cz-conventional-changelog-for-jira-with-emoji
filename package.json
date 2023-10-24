@@ -1,6 +1,6 @@
 {
   "name": "@hohshenyien/cz-conventional-changelog-for-jira",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "description": "Commitizen adapter following the conventional-changelog format with emoji and also asking for JIRA issue.",
   "main": "index.js",
   "scripts": {
